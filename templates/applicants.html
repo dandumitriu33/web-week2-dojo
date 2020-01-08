@@ -1,13 +1,18 @@
 {% extends 'base.html' %}
 
-{% head block %}
+{% block head %}
 <title>Applicants</title>
 {% endblock head %}
 
+
 {% block body %}
 
+    <ul> Applicants
+    {% for applicant in applicants %}
 
+        <li>{{ applicant.first_name }}</li>
 
+    {% endfor %}
+    </ul>
 
-
-{% enblock body %}
+{% endblock body %}
