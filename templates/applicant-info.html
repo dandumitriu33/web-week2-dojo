@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Applicant info</title>
+{% endblock head %}
+
+
+{% block body %}
+
+<h1>{{ applicant.first_name }} {{ applicant.last_name }} info </h1>
+
+<ul>
+    <li>First name: {{ applicant.first_name}}</li>
+    <li>Last name: {{ applicant.last_name }} </li>
+    <li>Phone number: {{ applicant.phone_number }}</li>
+    <li>Email: {{ applicant.email }}</li>
+    <li>ID in database: {{ applicant.id }}</li>
+</ul>
+
+
+
+{% endblock body %}

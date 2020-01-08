@@ -10,7 +10,7 @@
     <ul> Applicants
     {% for applicant in applicants %}
 
-        <li>{{ applicant.first_name }}</li>
+        <a href="{{ url_for('display_applicant', applicant_id=applicant.id) }}"><li>{{ applicant.first_name }}</li></a>
 
     {% endfor %}
     </ul>

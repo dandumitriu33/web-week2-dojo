@@ -14,5 +14,11 @@ def all_applicants_first_name():
     return render_template('applicants.html', applicants=applicants)
 
 
+@app.route('/applicants/<applicant_id>')
+def display_applicant(applicant_id):
+    applicant = data_manager.get_applicant_info(applicant_id)
+    return render_template('applicant-info.html', applicant=applicant)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
