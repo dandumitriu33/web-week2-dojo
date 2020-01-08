@@ -8,7 +8,7 @@ No information on this page is actual user information or PII.
 ## Installation - (Ubuntu 18.4 - Python 3 preinstalled)
 
 1. Install postgreSQL (create a database and \i the file in the data directory)
-2. Install pip2 
+2. Install pip 
 3. Install flask
 4. Install psycopg2
 
